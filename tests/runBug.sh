@@ -6,7 +6,7 @@ exit 1
 }
 trap error ERR
 
-ghc --make FindBinBug.hs
+ghc --make -i../src FindBinBug.hs
 dir=$(pwd)
 cd /
 echo should be the same output:
